@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app: 
+    build: ./
+    image: dalongrong/eclipse-temurin:19.0.1_10-jdk-focal-java-decompiler
+    volumes:
+      - ./src:/src
+      - ./dest:/dest
